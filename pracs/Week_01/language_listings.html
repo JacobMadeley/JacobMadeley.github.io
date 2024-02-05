@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programming Resources - Listings</title>
+    <title>Programming Language - Listings</title>
     <link rel="stylesheet" href="startup_stylesheet.css">
     <link rel="index" href="index.html">
     <link rel="language_listings" href="language_listings.html">
     <link rel="individual_resources" href="individual_resources.html">
+    <script src="table_interactions.js"></script>
 </head>
 <body>
     <header>
-        <h1>Programming Resources</h1>
+        <h1>Programming Languages</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -22,73 +23,74 @@
     </header>
 
     <main>
-        <section class="resource-categories">
-            <h2>Resource Categories</h2>
-            <section class="filter-options">
-                <h3>Filter Options</h3>
-                <div class="categories">
-                    <label for="category">Category:</label>
-                    <select id="category">
-                        <option value="all">All</option>
-                        <option value="web" selected>Web Development</option>
-                        <option value="mobile">Mobile Development</option>
-                        <option value="data" selected>Data Science</option>
-                    </select>
-                </div>
-                <div class="sorting">
-                    <label for="sort">Sort By:</label>
-                    <select id="sort">
-                        <option value="name">Name</option>
-                        <option value="popularity">Popularity</option>
-                    </select>
-                </div>
-            </section>
-        </section>
+        <h3>Filter Options</h3>
+        <label for="sortByName">Sort by Name:</label>
+        <select id="sortByName">
+            <option value="ascending">Ascending</option>
+            <option value="descending">Descending</option>
+        </select>
 
-        <section class="resource-listings">
-            <h2>Programming Resources</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Language</th>
-                        <th>Description</th>
-                        <th>Website</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Java<option value="mobile"></option></td>
-                        <td>A versatile, general-purpose programming language</td>
-                        <td><a href="individual_resources.html">Java Resources</a></td>
-                    </tr>
-                    <tr>
-                        <td>JavaScript</td>
-                        <td>An interpreted programming language for web development</td>
-                        <td><a href="individual_resources.html">JavaScript Resources</a></td>
-                    </tr>
-                    <tr>
-                        <td>Python</td>
-                        <td>A powerful, high-level programming language</td>
-                        <td><a href="individual_resources.html">Python Resources</a></td>
-                    </tr>
-                    <tr>
-                        <td>HTML</td>
-                        <td>A markup language for creating web pages</td>
-                        <td><a href="individual_resources.html">HTML Resources</a></td>
-                    </tr>
-                    <tr>
-                        <td>CSS</td>
-                        <td>A style sheet language for styling HTML documents</td>
-                        <td><a href="individual_resources.html">CSS Resources</a></td>
-                    </tr>
-                    <tr>
-                        <td>Kotlin</td>
-                        <td>A modern, general-purpose programming language</td>
-                        <td><a href="individual_resources.html">Kotlin Resources</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+        <label for="sortByUseage">Sort by Usage:</label>
+        <select id="sortByUseage">
+            <option value="artificialIntelligence">Artificial Intelligence</option>
+            <option value="augmentedReality">Augmented Reality</option>
+            <option value="cloudComputing">Cloud Computing</option>
+            <option value="cybersecurity">Cybersecurity</option>
+            <option value="dataAnalysis">Data Analysis</option>
+            <option value="dataVisualisation">Data Visualisation</option>
+            <option value="databaseManagement">Database Management</option>
+            <option value="embeddedSystems">Embedded Systems</option>
+            <option value="gameDevelopment">Game Development</option>
+            <option value="internetOfThings(IoT)">Internet of Things (IoT)</option>
+            <option value="machineLearning">Machine Learning</option>
+            <option value="mobileAppDevelopment">Mobile App Development</option>
+            <option value="naturalLanguageProcessing">Natural Language Processing</option>
+            <option value="robotics">Robotics</option>
+            <option value="virtualReality">Virtual Reality</option>
+            <option value="webApplications">Web Applications</option>
+            <option value="webDevelopment">Web Development</option>
+        </select>
+
+        <div id="filterOptions">
+        <!--Add dynamic filtering for some sortByUsage options-->
+        </div>
+
+        <table id="language_table">
+            <thead>
+                <tr>
+                    <th>Language Name</th>
+                    <th>Description</th>
+                    <th>Used For</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="individual_ resources.html">Java</a></td>
+                    <td>A class-based, object-oriented programming language designed for portability and platform independence.</td>
+                    <td>Artificial Intelligence, Android App Development, Game Development, Machine Learning, Web Applications, Mobile App Development, Web Development, Cloud Computing, Natural Language Processing</td>
+                </tr>
+                <tr>
+                    <td><a href="individual_ resources.html">JavaScript</a></td>
+                    <td>Description: JavaScript is an interpreted scripting language known for its versatility and widespread use across various domains, offering dynamic and interactive functionality in software development.</td>
+                    <td>Web Development, Data Analysis, Machine Learning, Game Development</td>
+                </tr>
+                <tr>
+                    <td><a href="individual_resources.html">Python</a></td>
+                    <td>An interpreted, high-level general-purpose programming language known for its simplicity and readability.</td>
+                    <td>Artificial Intelligence, Cloud Computing, Cybersecurity, Data Analysis, Data Visualisation, Internet of Things(IoT), Machine Learning, Natural Language Processing(NLP), Robotics, Web Applications, Web Development</td>
+                </tr>
+                <tr>
+                    <td><a href="individual_resources.html">Kotlin</a></td>
+                    <td>A statically typed language interoperable with Java, Kotlin offers concise syntax and modern features</td>
+                    <td>Augmented Reality, Mobile App Development, Android App Development</td>
+                </tr>
+                <tr>
+                    <td><a href="individual_resources.html">Swift</a></td>
+                    <td>Developed by Apple and is known for its safety features, modern syntax, and performance.</td>
+                    <td>Data Analysis, Mobile App Development, Artificial Intelligence, iOS App Development, Web Applications, Web Development, Embedded Systems, Game Development, Cloud Computing</td>
+                </tr>
+            </tbody>
+        </table>
     </main>
 
     <footer>
