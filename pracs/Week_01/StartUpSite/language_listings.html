@@ -11,50 +11,57 @@
 </head>
 <body>
     <header>
-        <h1>Programming Languages</h1>
-        <nav>
-            <ul>
+        <nav class="navbar">
+            <div class="navbarToggle" id="jsNavbarToggle" aria-label="Toggle Navigation">
+                <span class="toggleIcon">&#9776;</span>
+            </div>
+            <a href="index.html" class="logo">
+                <img src="Code Book.png" alt="Code Book Logo">
+            </a>
+            <ul class="mainNavbar" id="jsMenu" role="menubar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="language_listings.html">Language Listings</a></li>
-                <li><a href="individual_resources.html">Individual Language Resources</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h3>Filter Options</h3>
-        <label for="sortByName">Sort by Name:</label>
-        <select id="sortByName">
-            <option value="ascending">Ascending</option>
-            <option value="descending">Descending</option>
+        <section>
+            <h1>Programming Languages</h1>
+        </section>
+
+        <h3>Sort Options</h3>
+        <label for="sortOptions">Sort by Name:</label>
+        <select id="sortOptions" onchange="sortTable()">
+            <option value="null">Select</option>
+            <option value="asc">A - Z</option>
+            <option value="desc">Z - A</option>
         </select>
 
-        <label for="sortByUseage">Sort by Usage:</label>
-        <select id="sortByUseage">
-            <option value="artificialIntelligence">Artificial Intelligence</option>
-            <option value="augmentedReality">Augmented Reality</option>
-            <option value="cloudComputing">Cloud Computing</option>
-            <option value="cybersecurity">Cybersecurity</option>
-            <option value="dataAnalysis">Data Analysis</option>
-            <option value="dataVisualisation">Data Visualisation</option>
-            <option value="databaseManagement">Database Management</option>
-            <option value="embeddedSystems">Embedded Systems</option>
-            <option value="gameDevelopment">Game Development</option>
-            <option value="internetOfThings(IoT)">Internet of Things (IoT)</option>
-            <option value="machineLearning">Machine Learning</option>
-            <option value="mobileAppDevelopment">Mobile App Development</option>
-            <option value="naturalLanguageProcessing">Natural Language Processing</option>
-            <option value="robotics">Robotics</option>
-            <option value="virtualReality">Virtual Reality</option>
-            <option value="webApplications">Web Applications</option>
-            <option value="webDevelopment">Web Development</option>
+        <label for="filterByUsage">Filter by Usage:</label>
+        <select id="filterOptions" onchange="filterTableByUsage()">
+            <option value="all">All</option>
+            <option value="Artificial Intelligence">Artificial Intelligence</option>
+            <option value="Augmented Reality">Augmented Reality</option>
+            <option value="Cloud Computing">Cloud Computing</option>
+            <option value="Cybersecurity">Cybersecurity</option>
+            <option value="Data Analysis">Data Analysis</option>
+            <option value="Data Visualisation">Data Visualisation</option>
+            <option value="Database Management">Database Management</option>
+            <option value="Embedded Systems">Embedded Systems</option>
+            <option value="Game Development">Game Development</option>
+            <option value="Internet of Things (IoT)">Internet of Things (IoT)</option>
+            <option value="Machine Learning">Machine Learning</option>
+            <option value="Mobile App Development">Mobile App Development</option>
+            <option value="Natural Language Processing">Natural Language Processing</option>
+            <option value="Robotics">Robotics</option>
+            <option value="Virtual Reality">Virtual Reality</option>
+            <option value="Web Applications">Web Applications</option>
+            <option value="Web Development">Web Development</option>
         </select>
 
-        <div id="filterOptions">
-        <!--Add dynamic filtering for some sortByUsage options-->
-        </div>
 
-        <table id="language_table">
+        <table id="languageTable">
             <thead>
                 <tr>
                     <th>Language Name</th>
@@ -95,6 +102,7 @@
     <footer>
         <p>&copy; 2024 Programming Resources Hub. All rights reserved.</p>
     </footer>
-    <script src="table_interactions.js"></script>
+
+<script src="user_interactions.js"></script>
 </body>
 </html>

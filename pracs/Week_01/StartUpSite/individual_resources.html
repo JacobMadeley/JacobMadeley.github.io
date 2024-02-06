@@ -11,17 +11,22 @@
 </head>
 <body>
     <header>
-        <h1>Resource Title</h1>
-        <nav>
-            <ul>
+        <nav class="navbar">
+            <div class="navbarToggle" id="jsNavbarToggle" aria-label="Toggle Navigation">
+                <span class="toggleIcon">&#9776;</span>
+            </div>
+            <a href="index.html" class="logo">
+                <img src="Code Book.png" alt="Code Book Logo">
+            </a>
+            <ul class="mainNavbar" id="jsMenu" role="menubar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="language_listings.html">Language Listings</a></li>
-                <li><a href="individual_resources.html">Individual Language Resources</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <h1>Resource Title</h1>
         <section class="resource-details">
             <h2>Resource Details</h2>
             <!-- Add detailed information about the resource here -->
@@ -46,5 +51,7 @@
     <footer>
         <p>&copy; 2024 Programming Resources Hub. All rights reserved.</p>
     </footer>
+
+<script src="user_interactions.js"></script>
 </body>
 </html>
