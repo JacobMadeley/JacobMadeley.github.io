@@ -36,7 +36,7 @@ function filterOptions() {
     filterOptionsDiv.innerHTML = '';
 
     if (sortByUsage === 'Web Development') {
-        createFilterOption(filterOptionsDiv, 'frontend', 'Frount-End');
+        createFilterOption(filterOptionsDiv, 'frontend', 'Front-End');
         createFilterOption(filterOptionsDiv,'backend', 'Back-End');
     }
 
