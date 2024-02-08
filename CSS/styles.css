@@ -1,0 +1,100 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+/* Navigation Styles */
+.navbar {
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.navbar .logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.mainNavbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mainNavbar li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.mainNavbar li:last-child {
+  margin-right: 0;
+}
+
+.nav-links:hover{
+  color: #4a00d4;
+}
+
+@media screen and (min-width: 768px) {
+  .mainNavbar {
+    display: flex;
+  }
+
+  .mainNavbar li {
+    margin: 0 15px;
+}
+
+  .navbarToggle{
+    display: none;
+  }
+}
+
+/* Main Content Styles */
+.main-content {
+  margin-top: 20px;
+}
+
+.programming-languages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.programming-language {
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+}
+
+.programming-language h2 {
+  margin-top: 0;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
