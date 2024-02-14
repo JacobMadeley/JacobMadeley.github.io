@@ -1,100 +1,75 @@
-/* Global Styles */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #00BF69;
+  font-family: 'Courier New', monospace;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Header Styles */
-.header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-}
-
-.header h1 {
-  margin: 0;
-}
-
-/* Navigation Styles */
-.navbar {
-  background-color: #333;
+.logo {
   display: flex;
   align-items: center;
+}
+
+.logo img {
+  width: 80px;
+  height: 80px;;
+}
+
+.navbar{
+  background-color: #545454;
+  color: #D0B89A;
+  padding: auto;
+  display: auto;
   justify-content: space-between;
-  padding: 10px 20px;
+  align-items: auto;
+  overflow: hidden;
 }
 
-.navbar .logo {
-  color: #fff;
+.navLinks a {
+  float: left;
+  display: block;
+  text-align: auto;
+  padding: 14px 16px 14px 16px;
+  color: #3694DB;
   text-decoration: none;
-  font-size: 1.5rem;
 }
 
-.mainNavbar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.navLinks a:hover {
+  background-color: #3694DB;
+  color: #D0B89A;
 }
 
-.mainNavbar li {
-  display: inline-block;
-  margin-right: 15px;
+h1, h2, h3, p {
+  color: #545454;
 }
 
-.mainNavbar li:last-child {
-  margin-right: 0;
-}
-
-.nav-links:hover{
-  color: #4a00d4;
-}
-
-@media screen and (min-width: 768px) {
-  .mainNavbar {
-    display: flex;
-  }
-
-  .mainNavbar li {
-    margin: 0 15px;
-}
-
-  .navbarToggle{
-    display: none;
-  }
-}
-
-/* Main Content Styles */
-.main-content {
-  margin-top: 20px;
-}
-
-.programming-languages {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-}
-
-.programming-language {
-  background-color: #f5f5f5;
+main {
+  background-color: #D0B89A;
   padding: 20px;
-  text-align: center;
 }
 
-.programming-language h2 {
-  margin-top: 0;
+table {
+  border-collapse: collapse;
+  width: 100%;
 }
 
-/* Footer Styles */
-.footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
+th {
+  border: 1px solid #000000;
+  color: #545454;
+  padding: 10px;
+}
+
+td {
+  border: 1px solid #000000;
+  padding: auto;
+}
+
+tr {
+  background-color: #ffffff;
+}
+
+footer {
+  background-color: #00bf69;
+  color: #545454;
+  padding: 10px;
 }
