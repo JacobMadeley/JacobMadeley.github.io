@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=deviceWidth, initialScale=1.0">
+    <title>Code Book a Programming Resources Hub</title>
+    <link href="CSS\styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a class="logo" href="index.html">
+                    <img src="resources\logo.png" alt="Code Book Logo">
+                </a>
+            </div>
+            <div class="navLinks">
+                <a href="index.html">Home</a>
+                <a href="programmingLanguages.html">Programming Languages</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Programming Languages</h1>
+        </section>
+
+        <h3>Sort Options</h3>
+        <label for="sortOptions">Sort by Name:</label>
+        <select id="sortOptions" onchange="sortTable()">
+            <option value="null">Select</option>
+            <option value="asc">A - Z</option>
+            <option value="desc">Z - A</option>
+        </select>
+
+        <label for="filterOptions">Filter by Usage:</label>
+        <select id="filterOptions" onchange="filterTableByUsage()">
+            <option value="all">All</option>
+            <option value="Artificial Intelligence">Artificial Intelligence</option>
+            <option value="Augmented Reality">Augmented Reality</option>
+            <option value="Cloud Computing">Cloud Computing</option>
+            <option value="Cybersecurity">Cybersecurity</option>
+            <option value="Data Analysis">Data Analysis</option>
+            <option value="Data Visualisation">Data Visualisation</option>
+            <option value="Database Management">Database Management</option>
+            <option value="Embedded Systems">Embedded Systems</option>
+            <option value="Game Development">Game Development</option>
+            <option value="Internet of Things (IoT)">Internet of Things (IoT)</option>
+            <option value="Machine Learning">Machine Learning</option>
+            <option value="Mobile App Development">Mobile App Development</option>
+            <option value="Natural Language Processing">Natural Language Processing</option>
+            <option value="Robotics">Robotics</option>
+            <option value="Virtual Reality">Virtual Reality</option>
+            <option value="Web Applications">Web Applications</option>
+            <option value="Web Development">Web Development</option>
+        </select>
+
+
+        <table id="languageTable">
+            <thead>
+                <tr>
+                    <th>Language Name</th>
+                    <th>Description</th>
+                    <th>Used For</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="syntaxGuideHtml.html">Java</a></td>
+                    <td>A class-based, object-oriented programming language designed for portability and platform
+                        independence.</td>
+                    <td>Artificial Intelligence, Android App Development, Game Development, Machine Learning, Web
+                        Applications, Mobile App Development, Web Development, Cloud Computing, Natural Language
+                        Processing</td>
+                </tr>
+                <tr>
+                    <td><a href="syntaxGuideHtml.html">JavaScript</a></td>
+                    <td>Description: JavaScript is an interpreted scripting language known for its versatility and
+                        widespread use across various domains, offering dynamic and interactive functionality in
+                        software development.</td>
+                    <td>Web Development, Data Analysis, Machine Learning, Game Development</td>
+                </tr>
+                <tr>
+                    <td><a href="syntaxGuideHtml.html">Python</a></td>
+                    <td>An interpreted, high-level general-purpose programming language known for its simplicity and
+                        readability.</td>
+                    <td>Artificial Intelligence, Cloud Computing, Cybersecurity, Data Analysis, Data Visualisation,
+                        Internet of Things(IoT), Machine Learning, Natural Language Processing(NLP), Robotics, Web
+                        Applications, Web Development</td>
+                </tr>
+                <tr>
+                    <td><a href="syntaxGuideHtml.html">Kotlin</a></td>
+                    <td>A statically typed language interoperable with Java, Kotlin offers concise syntax and modern
+                        features</td>
+                    <td>Augmented Reality, Mobile App Development, Android App Development</td>
+                </tr>
+                <tr>
+                    <td><a href="syntaxGuideHtml.html">Swift</a></td>
+                    <td>Developed by Apple and is known for its safety features, modern syntax, and performance.</td>
+                    <td>Data Analysis, Mobile App Development, Artificial Intelligence, iOS App Development, Web
+                        Applications, Web Development, Embedded Systems, Game Development, Cloud Computing</td>
+                </tr>
+                <tr>
+                    <td><a href="syntaxGuideHtml.html">Hypertext Markup Language (HTML)</a></td>
+                    <td>HTML is a standard for creating web pages, defining structure
+                        and content, complemented by CSS and JavaScript.</td>
+                    <td>Data Visualization, Database Management, Cloud Computing, Web Development, Web Applications</td>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Programming Resources Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="JavaScript\functions.js"></script>
+</body>
+
+</html>
