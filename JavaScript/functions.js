@@ -1,8 +1,3 @@
-document.getElementById('jsNavbarToggle').addEventListener('click', function () {
-    var menu = document.getElementById('jsMenu');
-    menu.classList.toggle('active');
-});
-
 function sortTable() {
     let table, rows, switching, i, x, y, shouldSwitch, dir;
     table = document.getElementById('languageTable');
